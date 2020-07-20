@@ -6,7 +6,7 @@ const AppleLogin = () => {
     AppleID.auth.init({
       clientId: "com.leanscale.dca-dev-react.client",
       scope: "name email",
-      redirectURI: "https://dca-dev-react.leanscale.com/redirect-apple",
+      redirectURI: "https://apple-login-test.vercel.app/apple-login",
       state: "Initial user authentication request",
       nonce: "asd",
       usePopup: true,
@@ -45,7 +45,7 @@ const AppleLogin = () => {
           src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
         />
       </Head>
-      <button onClick={handleClick}>Sign in with Apple</button>
+      <button onClick={handleClick}>Sign in with Apple 2</button>
     </div>
   );
 };
